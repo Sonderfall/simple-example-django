@@ -4,10 +4,7 @@ from .models import User
 from .serializers import UserSerializer
 
 
-class ListUserView(generics.ListAPIView):
-    """
-    Provides a get method handler.
-    """
+class UserView(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 

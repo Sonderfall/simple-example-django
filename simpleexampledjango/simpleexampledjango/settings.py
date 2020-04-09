@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'simpleexampledjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_DATABASE'),
+        'USER':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_USERNAME'),
+        'PASSWORD':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_PASSWORD'),
+        'HOST':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_HOST'),
+        'PORT':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_PORT')
     }
 }
 
