@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'simpleexampledjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_DATABASE'),
-        'USER':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_USERNAME'),
-        'PASSWORD':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_PASSWORD'),
-        'HOST':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_HOST'),
-        'PORT':env_var('QOVERY_DATABASE_MY_MYSQL_3498225_PORT')
+        'NAME':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_DATABASE'),
+        'USER':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_USERNAME'),
+        'PASSWORD':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PASSWORD'),
+        'HOST':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_HOST'),
+        'PORT':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PORT')
     }
 }
 
