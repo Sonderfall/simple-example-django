@@ -7,4 +7,4 @@ class User(models.Model):
 	created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return "{} - {}".format(self.firstName, self.lastName)
+        return "{} {}, living at {}".format(self.firstName, self.lastName, self.city)
