@@ -6,4 +6,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 EXPOSE 80
-CMD ["python", "simpleexampledjango/manage.py", "runserver", "0.0.0.0:8000"]
+ENTRYPOINT ["python", "simpleexampledjango/manage.py", "runserver", "0.0.0.0:8000"]
