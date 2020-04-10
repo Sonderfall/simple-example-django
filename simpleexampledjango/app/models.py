@@ -8,3 +8,4 @@ class User(models.Model):
 
     def __str__(self):
         return "{} {}, living at {}".format(self.firstName, self.lastName, self.city)
+		
