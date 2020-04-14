@@ -1,0 +1,15 @@
+application:
+  name: simple-example-django
+  project: simple-example-django
+  cloud_region: aws/eu-west-3
+  publicly_accessible: true
+databases:
+- type: mysql
+  version: "8.0"
+  name: my-mysql-3498225
+routers:
+- name: main
+  routes:
+  - application_name: simple-example-django
+    paths:
+    - /*
