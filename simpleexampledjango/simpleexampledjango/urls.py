@@ -23,6 +23,6 @@ router = routers.DefaultRouter()
 router.register(r'users', views.UserView)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('/', include(router.urls)),
+    path(r'admin/', admin.site.urls),
+    path(r'/', include(router.urls)),
 ]
