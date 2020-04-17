@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'simpleexampledjango.wsgi.application'
 
 DATABASES = {
     'default': {        
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME':'mysql',
+        'ENGINE':'django.db.backends.postgresql_psycopg2',
+        'NAME':'postgres',
         'USER':'superuser',
-        'PASSWORD':'OUykFCHqTchXYdLH',
-        'HOST':'my-mysql-349-rxj5v591s97c7i1s-svc.cnuxtlki1yn9.eu-west-3.rds.amazonaws.com',
-        'PORT':'3306',
+        'PASSWORD':'MMGUbyvQo5S12H74',
+        'HOST':'my-postgresq-ioq35sem8mku75by-svc.cnuxtlki1yn9.eu-west-3.rds.amazonaws.com',
+        'PORT':'5432',
     },
 }
 
