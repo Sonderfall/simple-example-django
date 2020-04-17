@@ -20,7 +20,7 @@ from app import views
 
 router = routers.DefaultRouter()
 
-router.register(r'users', views.UserView)
+router.register(r'users/', views.FUserView)
 
 urlpatterns = [
     path(r'admin/', admin.site.urls),

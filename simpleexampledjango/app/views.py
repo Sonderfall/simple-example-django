@@ -3,6 +3,6 @@ from .models import *
 from .serializers import *
 
 # Will do CRUD base operations
-class UserView(viewsets.ModelViewSet):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+class FUserView(viewsets.ModelViewSet):
+    queryset = FUser.objects.all()
+    serializer_class = FUserSerializer

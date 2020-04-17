@@ -25,7 +25,11 @@ SECRET_KEY = '^yw@)d17y=r^atp4vy(jmljgcpfazi*k06e0fosjfc)@rt4#t3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+	'https://simple-examp-mfqjh6mulhbovydf',
+	'localhost'
+	'127.0.0.1'
+]
 
 
 # Application definition
@@ -78,14 +82,24 @@ WSGI_APPLICATION = 'simpleexampledjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_DATABASE'),
-        'USER':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_USERNAME'),
-        'PASSWORD':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PASSWORD'),
-        'HOST':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_HOST'),
-        'PORT':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PORT')
-    }
+        'NAME':'mysql',
+        'USER':'superuser',
+        'PASSWORD':'OUykFCHqTchXYdLH',
+        'HOST':'my-mysql-349-rxj5v591s97c7i1s-svc.cnuxtlki1yn9.eu-west-3.rds.amazonaws.com',
+        'PORT':'3306',
+    },
 }
 
+# DATABASES = {
+    # 'default': {
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'NAME':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_DATABASE'),
+        # 'USER':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_USERNAME'),
+        # 'PASSWORD':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PASSWORD'),
+        # 'HOST':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_HOST'),
+        # 'PORT':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PORT')
+    # }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

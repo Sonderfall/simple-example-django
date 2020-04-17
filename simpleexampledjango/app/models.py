@@ -1,6 +1,6 @@
 from django.db import models
 
-class User(models.Model):
+class FUser(models.Model):
     firstName = models.CharField(max_length=50, null=False)
     lastName = models.CharField(max_length=50, null=False)
     city = models.CharField(max_length=50, null=False)
