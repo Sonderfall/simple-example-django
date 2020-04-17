@@ -20,9 +20,10 @@ from app import views
 
 router = routers.DefaultRouter()
 
-router.register(r'users/', views.FUserView)
+router.register(r'users', views.FUserView)
 
 urlpatterns = [
-    path(r'admin/', admin.site.urls),
-    path(r'/', include(router.urls)),
+    path(r'admin/', admin.site.urls),    
 ]
+
+urlpatterns += router.urls
