@@ -25,7 +25,10 @@ SECRET_KEY = '^yw@)d17y=r^atp4vy(jmljgcpfazi*k06e0fosjfc)@rt4#t3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+	os.getenv('QOVERY_APPLICATION_SIMPLE_EXAMPLE_DJANGO_HOST'),
+	os.getenv('QOVERY_APPLICATION_SIMPLE_EXAMPLE_DJANGO_HOSTNAME'),
+]
 
 
 # Application definition
@@ -88,12 +91,12 @@ DATABASES = {
 
 # DATABASES = {
     # 'default': {
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_DATABASE'),
-        # 'USER':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_USERNAME'),
-        # 'PASSWORD':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PASSWORD'),
-        # 'HOST':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_HOST'),
-        # 'PORT':os.getenv('QOVERY_DATABASE_MY_MYSQL_3498225_PORT')
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_DATABASE'),
+        # 'USER':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_USERNAME'),
+        # 'PASSWORD':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PASSWORD'),
+        # 'HOST':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_HOST'),
+        # 'PORT':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PORT')
     # }
 # }
 
