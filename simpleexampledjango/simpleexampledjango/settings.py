@@ -23,9 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^yw@)d17y=r^atp4vy(jmljgcpfazi*k06e0fosjfc)@rt4#t3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
+    '*',
     '*' + os.getenv('QOVERY_APPLICATION_SIMPLE_EXAMPLE_DJANGO_HOSTNAME') + '*',
     '127.0.0.1',
     'localhost'
