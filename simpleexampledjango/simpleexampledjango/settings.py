@@ -87,13 +87,15 @@ DATABASES = {
     }
 }
 
-print(os.getenv('POULET'))
+print('POULET')
 print(os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_DATABASE'))
 print(os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_USERNAME'))
 print(os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PASSWORD'))
 print(os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_HOST'))
 print(os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PORT'))
-print(os.getenv('POULET 2'))
+print(os.environ.get('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PORT'))
+print('POULET 2')
+print(os.environ)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
