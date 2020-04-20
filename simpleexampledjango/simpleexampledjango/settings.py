@@ -26,10 +26,9 @@ SECRET_KEY = '^yw@)d17y=r^atp4vy(jmljgcpfazi*k06e0fosjfc)@rt4#t3'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-	os.getenv('QOVERY_APPLICATION_SIMPLE_EXAMPLE_DJANGO_HOST'),
-	os.getenv('QOVERY_APPLICATION_SIMPLE_EXAMPLE_DJANGO_HOSTNAME'),
-	'127.0.0.1',
-	'localhost'
+    '*' + os.getenv('QOVERY_APPLICATION_SIMPLE_EXAMPLE_DJANGO_HOSTNAME') + '*',
+    '127.0.0.1',
+    'localhost'
 ]
 
 
