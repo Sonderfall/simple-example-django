@@ -77,14 +77,22 @@ WSGI_APPLICATION = 'simpleexampledjango.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_DATABASE'),
-        'USER':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_USERNAME'),
-        'PASSWORD':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PASSWORD'),
-        'HOST':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_HOST'),
-        'PORT':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PORT')
+    'default': {        
+        'ENGINE':'django.db.backends.postgresql_psycopg2',
+        'NAME':'postgres',
+        'USER':'superuser',
+        'PASSWORD':'MMGUbyvQo5S12H74',
+        'HOST':'my-postgresq-ioq35sem8mku75by-svc.cnuxtlki1yn9.eu-west-3.rds.amazonaws.com',
+        'PORT':'5432',
     }
+    # 'default': {
+        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_DATABASE'),
+        # 'USER':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_USERNAME'),
+        # 'PASSWORD':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PASSWORD'),
+        # 'HOST':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_HOST'),
+        # 'PORT':os.getenv('QOVERY_DATABASE_MY_POSTGRESQL_3498225_PORT')
+    # }
 }
 
 # Password validation
