@@ -2,7 +2,7 @@ FROM python:3.8
 
 WORKDIR app/
 
-# Install everything necessary to run Django/REST API
+# Copy req file then install everything necessary to run Django/REST API
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
